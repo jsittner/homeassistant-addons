@@ -1,7 +1,7 @@
 ---
 name: Trilium Next
-version: v0.97.1
-upstream: v0.97.1
+version: v0.97.2
+upstream: v0.97.2
 slug: triliumnext
 description: TriliumNext Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
 url: https://github.com/jsittner/homeassistant-addons/triliumnext
