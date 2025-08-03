@@ -7,8 +7,9 @@ arch:
   - aarch64
 startup: services
 boot: auto
-ingress: false  # Use true only if you're supporting ingress routing
 panel_icon: mdi:proxy
+ingress: true
+ingress_port: 8080
 ports:
   80/tcp: 8005  # Expose proxy on port 8125
 map:
