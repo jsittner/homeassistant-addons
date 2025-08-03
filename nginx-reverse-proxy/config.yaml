@@ -1,5 +1,5 @@
 name: "NGINX Reverse Proxy"
-version: "1.0.10"
+version: "1.0.11"
 slug: "nginx_proxy"
 description: "A simple NGINX reverse proxy for embedding or exposing local services"
 arch:
