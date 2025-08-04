@@ -1,5 +1,5 @@
 name: "NGINX Reverse Proxy"
-version: "1.0.18"
+version: "1.0.19"
 slug: "nginx_proxy"
 description: "A simple NGINX reverse proxy for embedding or exposing local services"
 arch:
@@ -11,6 +11,6 @@ panel_icon: mdi:proxy
 ingress: true
 ingress_port: 8005
 ports:
-  80/tcp: 8005  # Expose proxy on port 8125
+  8005/tcp: 8005
 map:
   - config:rw
