@@ -8,9 +8,9 @@ arch:
 startup: services
 boot: auto
 panel_icon: mdi:proxy
-ingress: true
+ingress: false
 ingress_port: 8005
 ports:
-  8005/tcp: 8005
+  8443/tcp: 8443
 map:
   - config:rw
