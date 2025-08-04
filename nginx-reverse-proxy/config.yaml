@@ -1,5 +1,5 @@
 name: "NGINX Reverse Proxy"
-version: "1.0.26"
+version: "1.0.27"
 slug: "nginx_proxy"
 description: "A simple NGINX reverse proxy for embedding or exposing local services"
 arch:
@@ -14,3 +14,4 @@ ports:
   8443/tcp: 8443
 map:
   - config:rw
+  - ssl:rw
