@@ -3,12 +3,11 @@ FROM ${TRILIUM_IMAGE}
 
 SHELL ["/bin/sh", "-c"]
 
-RUN apt-get update \
-  && apt-get install -y --no-install-recommends nginx ca-certificates \
-  && rm -rf /var/lib/apt/lists/*
+# Alpine-based image: use apk
+RUN apk add --no-cache nginx ca-certificates
 
-# nginx runs in foreground, no daemon
-RUN rm -f /etc/nginx/sites-enabled/default
+# Remove default site if present (Alpine path)
+RUN rm -f /etc/nginx/http.d/default.conf || true
 
 COPY rootfs/ /
 
@@ -17,4 +16,3 @@ RUN chmod +x /run.sh
 EXPOSE 80 8080
 
 CMD ["/run.sh"]
-
