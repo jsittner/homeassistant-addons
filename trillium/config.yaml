@@ -1,6 +1,6 @@
 ---
 name: Trilium
-version: v0.100.0.42
+version: v0.100.0.43
 upstream: v0.100.0
 slug: trilium
 description: TriliumNext Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
@@ -27,6 +27,7 @@ environment:
   TRILIUM_DATA_DIR: /config
   TRILIUM_NETWORK_PORT: "8080"
   TRILIUM_NETWORK_TRUSTEDREVERSEPROXY: "uniquelocal"
+  trustedReverseProxy=true
 
 ports:
   80/tcp: 80
