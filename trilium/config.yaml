@@ -22,7 +22,7 @@ map:
 
 ingress: true
 ingress_port: 8099
-panel_icon: mdi:wikipedia
+panel_icon: mdi:text-box-outline
 
 environment:
   TRILIUM_DATA_DIR: /config
