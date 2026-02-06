@@ -3,21 +3,19 @@ FROM ${TRILIUM_IMAGE}
 
 SHELL ["/bin/sh", "-c"]
 
-# Install nginx
-RUN apk --no-cache add nginx && mkdir -p /run/nginx /var/log/nginx
+# Install nginx and netcat for port checking
+RUN apk --no-cache add nginx netcat-openbsd && mkdir -p /run/nginx /var/log/nginx
 
-# Remove any existing nginx configs from base image
+# Remove existing nginx config from base image
 RUN rm -rf /etc/nginx/nginx.conf /etc/nginx/http.d/*
 
-# Copy our nginx configs
+# Copy our configs
 COPY rootfs/ /
-COPY ingress.conf /etc/nginx/http.d/
 
 # Make run script executable
 RUN chmod +x /run.sh
 
-# Expose ports (8099 for ingress, 8080 for Trilium)
+# Expose ports
 EXPOSE 8099 8080
 
-# Use run.sh to start both services
 CMD ["/run.sh"]
