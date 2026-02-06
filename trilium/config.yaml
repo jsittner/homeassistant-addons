@@ -22,8 +22,6 @@ map:
 
 ingress: true
 ingress_port: 8099
-ports:
-  8080/tcp: 8080
 panel_icon: mdi:note-text
 
 environment:
@@ -32,10 +30,8 @@ environment:
   TRILIUM_NETWORK_TRUSTEDREVERSEPROXY: "172.30.32.2"
   
 ports:
-  80/tcp: 80
   8080/tcp: 8080
 ports_description:
-  80/tcp: Ingress (nginx)
   8080/tcp: Direct Trilium (optional)
 
 build:
