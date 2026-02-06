@@ -4,16 +4,14 @@ FROM ${TRILIUM_IMAGE}
 SHELL ["/bin/sh", "-c"]
 
 # Install nginx
-RUN apk --no-cache add nginx && mkdir -p /run/nginx
+RUN apk --no-cache add nginx && mkdir -p /run/nginx /var/log/nginx
 
-# Copy nginx config
-COPY ingress.conf /etc/nginx/http.d/
+# Remove any existing nginx configs from base image
+RUN rm -rf /etc/nginx/nginx.conf /etc/nginx/http.d/*
 
-# Remove default site if present (Alpine path)
-RUN rm -f /etc/nginx/http.d/default.conf || true
-
-# Copy rootfs
+# Copy our nginx configs
 COPY rootfs/ /
+COPY ingress.conf /etc/nginx/http.d/
 
 # Make run script executable
 RUN chmod +x /run.sh
