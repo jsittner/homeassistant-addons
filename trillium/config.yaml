@@ -20,7 +20,7 @@ map:
     read_only: false
 
 ingress: true
-ingress_port: 80
+ingress_port: 8099
 panel_icon: mdi:wikipedia
 
 environment:
