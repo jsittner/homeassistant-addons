@@ -1,6 +1,6 @@
 ---
-name: Trilium
-version: v0.103.1.6
+name: Trilium Notes
+version: v0.103.1.7
 upstream: v0.103.1
 slug: trilium
 description: Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
@@ -22,7 +22,7 @@ map:
 
 ingress: true
 ingress_port: 8099
-panel_icon: mdi:text-box-outline
+panel_icon: mdi:note-text
 
 environment:
   TRILIUM_DATA_DIR: /config
@@ -39,7 +39,7 @@ ports_description:
 build:
   dockerfile: Dockerfile
   args:
-    TRILIUM_IMAGE: "triliumnext/trilium:0.100.0"
+    TRILIUM_IMAGE: "triliumnext/trilium:0.103.1"
 
 webui: http://[HOST]:[PORT:8080]
 
