@@ -27,5 +27,5 @@ else
   fi
 fi
 
-echo "Starting nginx on :80 ..."
+echo "Starting nginx on :8099 ..."
 nginx -g "daemon off;"
