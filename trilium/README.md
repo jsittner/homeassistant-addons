@@ -9,9 +9,12 @@ Trilium Next Notes is a hierarchical note taking application with focus on build
 4. Start the add-on, it will fail.
 5. Then ssh to your home assistant and run `chmod 777 /addon_configs/2b36e01f_triliumnext`
 6. Start the add-on.
-7. Check the logs of the add-on to see if everything went well.
-  
+7. Go to your local homeassistant IP:port admin port or ingress.
 
-Webui can be access from the HA ingress.
+```
+port : 8000 #port you want to run admin interface on.
+```
+
+Webui can be found at `<your-ip>:port` or ingress.
 
 [repository]: https://github.com/jsittner/homeassistant-addons
