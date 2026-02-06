@@ -1,8 +1,0 @@
----
-github_fulltag: true
-last_update: 12-18-2025
-repository: jsittner/homeassistant-addons
-slug: trilium
-source: github
-upstream_repo: triliumnext/trilium
-upstream_version: 0.100.0
