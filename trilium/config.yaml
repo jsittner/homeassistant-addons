@@ -1,9 +1,9 @@
 ---
 name: Trilium
-version: v0.103.1.5
+version: v0.103.1.6
 upstream: v0.103.1
 slug: trilium
-description: TriliumNext Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
+description: Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
 arch:
   - armhf
   - armv7
