@@ -1,4 +1,4 @@
-# Home assistant add-on: Trillium Notes
+# Home assistant add-on: Trilium Notes
 Trilium Next Notes is a hierarchical note taking application with focus on building large personal knowledge bases. 
 
 ## Installation
