@@ -19,14 +19,15 @@ map:
   - type: addon_config
     read_only: false
 
+
 ingress: true
-ingress_port: 80 
+ingress_port: 8099
 panel_icon: mdi:wikipedia
 
 environment:
   TRILIUM_DATA_DIR: /config
   TRILIUM_NETWORK_PORT: "8080"
-  TRILIUM_NETWORK_TRUSTEDREVERSEPROXY: 172.30.32.2  
+  TRILIUM_NETWORK_TRUSTEDREVERSEPROXY: "172.30.32.2"
   
 ports:
   80/tcp: 80
