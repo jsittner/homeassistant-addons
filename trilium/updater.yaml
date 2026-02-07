@@ -1,9 +1,9 @@
 ---
 name: Trilium Notes
 github_fulltag: true
-last_update: 12-18-2025
+last_update: 02-06-2026
 repository: jsittner/homeassistant-addons
 slug: trilium
 source: github
 upstream_repo: triliumnext/trilium
-upstream_version: 0.100.0
+upstream_version: 0.101.3
