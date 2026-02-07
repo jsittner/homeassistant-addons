@@ -3,7 +3,7 @@ Trilium Next Notes is a hierarchical note taking application with focus on build
 
 ## Installation
 
-1. [Add my Hass.io add-ons repository][repository] to your Hass.io instance.
+1. Add my [Home Assistant add-ons repository][repository] to your Home Assistant apps.
 2. Install this add-on.
 3. Click the `Save` button to store your configuration.
 4. Start the add-on, it will fail.
