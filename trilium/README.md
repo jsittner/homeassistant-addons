@@ -7,7 +7,7 @@ Trilium Next Notes is a hierarchical note taking application with focus on build
 2. Install this add-on/app.
 3. Start the add-on, it will fail.
 4. Then ssh to your home assistant and run `chmod 777 /addon_configs/2b36e01f_triliumnext`
-5. Start the add-on.
+5. Start the add-on/app again.
 6. Go to your local homeassistant IP:port admin port or ingress.
 
 ```
