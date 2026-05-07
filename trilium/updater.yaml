@@ -6,4 +6,4 @@ repository: jsittner/homeassistant-addons
 slug: trilium
 source: github
 upstream_repo: triliumnext/trilium
-upstream_version: 0.101.3
+upstream_version: 0.102.2
