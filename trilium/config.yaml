@@ -1,7 +1,7 @@
 ---
 name: Trilium Notes
-version: v0.101.3.9
-upstream: v0.101.3
+version: v0.102.2.1
+upstream: v0.102.2
 slug: trilium
 description: Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
 arch:
