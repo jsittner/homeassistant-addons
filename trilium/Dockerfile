@@ -1,4 +1,4 @@
-ARG TRILIUM_IMAGE=ghcr.io/triliumnext/trilium:v0.101.3
+ARG TRILIUM_IMAGE=ghcr.io/triliumnext/trilium:v0.104.1
 FROM ${TRILIUM_IMAGE}
 
 SHELL ["/bin/sh", "-c"]
