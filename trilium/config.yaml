@@ -1,7 +1,7 @@
 ---
 name: Trilium Notes
-version: v0.102.2.1
-upstream: v0.102.2
+version: v0.104.1
+upstream: v0.104.1
 slug: trilium
 description: Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
 arch:
@@ -37,7 +37,7 @@ ports_description:
 build:
   dockerfile: Dockerfile
   args:
-    TRILIUM_IMAGE: "triliumnext/trilium:0.101.3"
+    TRILIUM_IMAGE: "triliumnext/trilium:0.104.1"
 
 webui: http://[HOST]:[PORT:8080]
 
